@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+#main_block {
+  background-color: black;
+  opacity: 89%;
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  left: calc(50% - 125px);
+  top: 160px;
+  padding: 5px;
+}
+
+#display {
+  background-color: black;
+  margin: 4px;
+  border: 2px solid black;
+  height: 80px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+#previousValue {
+  margin: 10px;
+  text-align: end;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#currentValue { 
+  margin: 10px;
+  text-align: end;
+  font-size: xx-large;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+} 
+
+#content {
+  width: 180px;
+  position: relative;
+  float: left;
+  padding: 4px;
+}
+
+.buttonNumber {
+  margin: 3px;
+  width: 50px;
+  height: 50px;
+  font-size: large;
+  font-weight: 500;
+  border: 1px solid;
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.buttonNumber:hover,.buttonOperation:hover {
+  cursor: pointer;
+}
+
+#contentOperation {
+  width: 54px;
+  float: right;
+  position: relative;
+  padding: 4px;
+}
+
+.buttonOperation {
+  margin: 3px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  font-size: larger;
+  background-color: gold;
+  box-shadow: 0 2px gray;
+}
+
+.buttonOperation:active {
+  background-color: rgb(159, 126, 15);
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
+.buttonNumber:active {
+  background-color: rgb(147, 147, 147);
+  transform: translateY(1px);
+}
+
+#cancel {
+  margin-right: 70px;
+  background-color: red;
+}
+
+#zero {
+  margin-left: 63px;
+}
+
+#equal {
+  background-color: rgb(6, 165, 6);
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+#equal:active {
+  background-color: rgb(0, 70, 15);
+}
+
+#cancel:active {
+  background-color: rgb(114, 3, 3);
+}
+
+
